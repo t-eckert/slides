@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Slides from '$lib/deck/slides.svelte';
+	import TisButAScratch from '../presentations/tis-but-a-scratch/tis-but-a-scratch.svelte';
+</script>
+
+<Slides>
+	<TisButAScratch />
+</Slides>

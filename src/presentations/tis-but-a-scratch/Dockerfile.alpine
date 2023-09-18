@@ -1,0 +1,10 @@
+FROM golang:1.21-alpine
+
+RUN mkdir /app
+COPY ./webapp/* /app
+
+WORKDIR /app
+
+RUN go build -o webapp
+EXPOSE 8080
+CMD ["./webapp"]
